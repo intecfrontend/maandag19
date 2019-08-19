@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <div class="container">
+
+        <noscript>
+            <div class="warning">
+                <p>This website works best with Javascript enabled</p>
+            </div>
+        </noscript>
+
+        <div class="brief">
+            <form class="form" action="">
+
+                <h4 class="form-title">Brief naar Sinterklaas van
+                    <span id="voornaam">
+                    </span>
+                    <span id="achternaam">
+                    </span>
+                </h4>
+
+                <fieldset>
+                    <legend>Mijn gegevens</legend>
+                    <div>
+                        <label for="">Voornaam</label>
+                        <input type="text" id="vngeg" oninput="voornaamFunction()">
+                    </div>
+                    <div>
+                        <label for="">Naam</label>
+                        <input type="text" id="angeg" oninput="achternaamFunction()">
+                    </div>
+                </fieldset>
+
+
+
+
+
+                <fieldset class="verlanglijst">
+                    <legend>Mijn verlanglijst</legend>
+
+                    <div class="multi-fields">
+                        <div class="multi-field">
+                            <input type="text" name="stuff[]">
+                            <button type="button" class="remove-field">-</button>
+                            <button type="button" class="add-field">+</button>
+
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+
+
+
+                <fieldset class="braaf">
+                    <legend>Ben ik braaf geweest?</legend>
+
+                    <div>
+                        <label for="ja">ja</label>
+                        <input type="radio" id="jaradio" name="braaf" value="1" onclick="myFunctionabelen()">
+                    </div>
+                    <div>
+                        <label for="nee">nee</label>
+                        <input type="radio" id="neeradio" name="braaf" value="" onclick="myFunctiondisabelen()">
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button class="reset-button">reset</button>
+                    <button id="mysubmit">submit</button>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="myScript.js"></script>
+
+</body>
+
+</html>

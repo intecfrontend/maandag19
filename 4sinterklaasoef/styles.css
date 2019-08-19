@@ -1,0 +1,30 @@
+.brief .form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding: 30px;
+  border: 1px solid grey;
+}
+
+  .brief .form-title {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .brief .form fieldset {
+    border: 1px solid grey;
+    margin-bottom: 20px;
+  }
+
+  .verlanglijst {
+    width: 370px;
+  }  
+
+  .brief .form-row {
+    margin: 10px 0;
+  }
+
+  .brief label {
+    cursor: pointer;
+  }

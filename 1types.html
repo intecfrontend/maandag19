@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="easy-calc.js"></script>
+
+    <title>Easy Calculator</title>
+
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 10vw;
+        background-color: gold;
+    }
+</style>
+
+<body>
+    <!--
+    <form action="">
+        <div class=”form-row”>
+            <div class=”col-md-6 mb-3”>
+
+                <label for=”input_1”> Eerste getal </label>
+                <input type=”text” class=”” id=”input_1” name=”first_input” value="" placeholder="vul getal 1 in"
+                    required>
+
+                <label for=”input_2”> Tweede getal </label>
+
+
+                <input type=”text” class=”” id=”input_2” name=”second_input” value="" placeholder="vul getal 2 in"
+                    required>
+
+                <div class=”invalid-feedback”> Je vergat het eerste getal in te vullen getal</div>
+                <select name="" id="operator">
+                    <option value="add">+</option>
+                    <option value="min">-</option>
+                    <option value="div">/</option>
+                    <option value="mul">*</option>
+                </select>
+                <button type="button" name="button" onclick="calc()">Calculate</button>
+
+
+            </div>
+    </form>
+
+
+
+
+
+
+
+    </div>-->
+
+
+    <!--extra info-->
+    <input type="number" name="" id="" min="1" max="999" step="1" class="c-input-field" value="123" />
+    <br><br><br>
+    <input type="tel" name="" id="" class="c-input-field" value="01234 567 890" />
+    <br><br><br>
+    <input type="search" name="" id="" autocorrect="off" class="c-input-field" value="Some search terms" />
+    <br><br><br><input type="email" name="" id="" autocapitalize="none" autocorrect="off" class="c-input-field"
+        value="user@email.com" />
+    <br><br><br><input type="password" name="" id="" autocapitalize="none" autocorrect="off" class="c-input-field"
+        value="user@email.com" />
+    <br><br><br>
+    <fieldset>
+        <!--fieldset-tag to draw frames arround-->
+        <legend>Mijn gegevens</legend>
+        <!--legend-tag together with fieldset = nice-->
+        <div>
+            <label for="vngeg">Voornaam</label>
+            <!--label-tag to label smthing-->
+            <input type="text" name="naam" id="vngeg" placeholder="vul je voornaam in" oninput="voornaamFunction()">
+            <!--for and id must be the same-->
+            <!--input tags are not closed just as img-tags-->
+        </div>
+        <div>
+            <label for="angeg">Naam</label>
+            <input type="text" name="naam" id="vngeg" placeholder="vul je familienaam in"
+                oninput="achternaamFunction()">
+
+        </div>
+    </fieldset>
+
+    <br><br><br>
+    <textarea name="" id="" class="c-input-field c-input-field--multiline">Some multiline text</textarea>
+
+    <br><br><br>
+    <div class="[ c-check-field ] [ is-error ]">
+        <label for="checkbox-error-field" class="c-check-field__decor" aria-hidden="true" role="presentation"></label>
+        <br><label for="checkbox-error-field" class="c-check-field__label">vanille</label>
+        <input type="checkbox" name="checkbox-error-field" id="checkbox-error-field" class="c-check-field__input" />
+        <br><label for="checkbox-error-field" class="c-check-field__label">aardbei</label>
+        <input type="checkbox" name="checkbox-error-field" id="checkbox-error-field" class="c-check-field__input" />
+        <br><label for="checkbox-error-field" class="c-check-field__label">citroen</label>
+        <input type="checkbox" name="checkbox-error-field" id="checkbox-error-field" class="c-check-field__input" />
+        <br><label for="checkbox-error-field" class="c-check-field__label">choco</label> <input type="checkbox"
+            name="checkbox-error-field" id="checkbox-error-field" class="c-check-field__input" />
+
+    </div>
+    <br><br><br>
+    <div class="[ c-check-field c-check-field--radio ] [ is-error ]">
+        <input type="radio" name="radio-error-field" id="radio-error-field" class="c-check-field__input" />
+        <label for="radio-error-field" class="c-check-field__decor" aria-hidden="true" role="presentation"></label>
+        <label for="radio-error-field" class="c-check-field__label">man</label>
+        <br>
+        <input type="radio" name="radio-error-field" id="radio-error-field" class="c-check-field__input" />
+        <label for="radio-error-field" class="c-check-field__decor" aria-hidden="true" role="presentation"></label>
+        <label for="radio-error-field" class="c-check-field__label">vrouw</label>
+    </div>
+
+
+
+</body>
+
+</html>
